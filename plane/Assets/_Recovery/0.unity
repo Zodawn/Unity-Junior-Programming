@@ -621,13 +621,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.75250024, z: -0, w: -0.65859205}
-  m_LocalPosition: {x: 21, y: 0, z: -22.4}
+  m_LocalRotation: {x: 0, y: -0.89617693, z: 0, w: 0.44369695}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 262.385, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -127.32, z: 0}
 --- !u!114 &534669907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -641,6 +641,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plane: {fileID: 825415029}
+  moveAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: a20f030d-4fbe-40d8-946f-3a4bfa4225ea
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  moveInput: {x: 0, y: 0}
 --- !u!114 &534669908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1047,17 +1057,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   rotationSpeed: 100
-  verticalInput: 10
   moveAction:
     m_Name: Move
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 004c9402-09bb-424e-82c0-3581570c617a
+    m_Id: 28c53d3b-bb58-49c3-8fc3-a5f6e38a377d
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 2D Vector
-      m_Id: b92df1cb-4969-4822-8043-7f4d65162a81
+      m_Id: 57374f18-ff77-4679-a3b5-700612792de7
       m_Path: 2DVector
       m_Interactions: 
       m_Processors: 
@@ -1065,7 +1074,7 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 4
     - m_Name: up
-      m_Id: 0ba57315-a65e-4bbd-bd20-38edcb0f8744
+      m_Id: 5f75401b-e923-42c1-be08-1d0375cd5c63
       m_Path: <Keyboard>/w
       m_Interactions: 
       m_Processors: 
@@ -1073,7 +1082,7 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 8
     - m_Name: down
-      m_Id: 7e65ad7c-f9b2-4fab-8e84-060619557b26
+      m_Id: e12977ed-8856-4b5c-9013-837a18cbe099
       m_Path: <Keyboard>/s
       m_Interactions: 
       m_Processors: 
@@ -1081,7 +1090,7 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 8
     - m_Name: left
-      m_Id: 32c12a80-7a8d-429d-b855-0f6c3039c72b
+      m_Id: 30b3daca-1b14-40c7-a8e2-16842c7de210
       m_Path: <Keyboard>/a
       m_Interactions: 
       m_Processors: 
@@ -1089,7 +1098,7 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 8
     - m_Name: right
-      m_Id: b96bf735-069e-4257-a2d4-c9552379f5ad
+      m_Id: 4d6bbba9-4b52-409a-b6e4-b22e0e228af1
       m_Path: <Keyboard>/d
       m_Interactions: 
       m_Processors: 
