@@ -2742,6 +2742,7 @@ GameObject:
   - component: {fileID: 3626380286426009245}
   - component: {fileID: 6811478858708733358}
   - component: {fileID: 4755048276445757362}
+  - component: {fileID: 8147472158203222972}
   m_Layer: 0
   m_Name: Dog_SaintBernard_01
   m_TagString: Untagged
@@ -2836,6 +2837,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
   speed: 50
+--- !u!114 &8147472158203222972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4551773195617310262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0770f322295dd6e4796e00821830595f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
 --- !u!1 &4584403810511158912
 GameObject:
   m_ObjectHideFlags: 0
