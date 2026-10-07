@@ -561,6 +561,23 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1 &685894238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6477163064389233946, guid: 31a6bc864eb511d4abbb3dd81a6ffe15, type: 3}
+  m_PrefabInstance: {fileID: 1486279440}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &685894243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685894238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9a9564af57656408157355da370c4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1001 &746758967
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -892,10 +909,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dog_SaintBernard_01
       objectReference: {fileID: 0}
+    - target: {fileID: 4755048276445757362, guid: 4e0b5663f88bf08468be260083479ef2, type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4551773195617310262, guid: 4e0b5663f88bf08468be260083479ef2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1518616029}
   m_SourcePrefab: {fileID: 100100000, guid: 4e0b5663f88bf08468be260083479ef2, type: 3}
 --- !u!1001 &1486279440
 PrefabInstance:
@@ -949,11 +973,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animal_Doe_02
       objectReference: {fileID: 0}
+    - target: {fileID: 8032518297363267875, guid: 31a6bc864eb511d4abbb3dd81a6ffe15, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6477163064389233946, guid: 31a6bc864eb511d4abbb3dd81a6ffe15, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 685894243}
   m_SourcePrefab: {fileID: 100100000, guid: 31a6bc864eb511d4abbb3dd81a6ffe15, type: 3}
+--- !u!1 &1518616024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4551773195617310262, guid: 4e0b5663f88bf08468be260083479ef2, type: 3}
+  m_PrefabInstance: {fileID: 1339741173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1518616029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518616024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9a9564af57656408157355da370c4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1 &1590138454
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,6 +1139,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3485176451937503754, guid: 14e969ee793e26548bbb6714fab822db, type: 3}
+      propertyPath: speed
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 4798966695101066855, guid: 14e969ee793e26548bbb6714fab822db, type: 3}
       propertyPath: m_Name
       value: Animal_Fox_01
@@ -1098,7 +1150,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4798966695101066855, guid: 14e969ee793e26548bbb6714fab822db, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1777859202}
   m_SourcePrefab: {fileID: 100100000, guid: 14e969ee793e26548bbb6714fab822db, type: 3}
 --- !u!1001 &1639065551
 PrefabInstance:
@@ -1108,6 +1163,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 357639677186264158, guid: 1b82f8a1b3e084040b410119fdac9823, type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5032867862262099594, guid: 1b82f8a1b3e084040b410119fdac9823, type: 3}
       propertyPath: m_Name
       value: Animal_Stag_01
@@ -1155,8 +1214,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5032867862262099594, guid: 1b82f8a1b3e084040b410119fdac9823, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1673214608}
   m_SourcePrefab: {fileID: 100100000, guid: 1b82f8a1b3e084040b410119fdac9823, type: 3}
+--- !u!1 &1673214603 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5032867862262099594, guid: 1b82f8a1b3e084040b410119fdac9823, type: 3}
+  m_PrefabInstance: {fileID: 1639065551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1673214608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673214603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9a9564af57656408157355da370c4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
+--- !u!1 &1777859197 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4798966695101066855, guid: 14e969ee793e26548bbb6714fab822db, type: 3}
+  m_PrefabInstance: {fileID: 1612546095}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1777859202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777859197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9a9564af57656408157355da370c4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1001 &2171464148265631670
 PrefabInstance:
   m_ObjectHideFlags: 0

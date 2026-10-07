@@ -468,6 +468,7 @@ GameObject:
   - component: {fileID: 3485176451937503754}
   - component: {fileID: 5779674252484425708}
   - component: {fileID: 1947873254491309560}
+  - component: {fileID: 1756863311672335173}
   m_Layer: 0
   m_Name: Animal_Fox_01
   m_TagString: Untagged
@@ -537,7 +538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6752d63399dec044d8fd6a8bf3c6c9d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
-  speed: 37
+  speed: 14
 --- !u!114 &5779674252484425708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -571,6 +572,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1756863311672335173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4798966695101066855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9a9564af57656408157355da370c4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1 &5446704885617261901
 GameObject:
   m_ObjectHideFlags: 0
