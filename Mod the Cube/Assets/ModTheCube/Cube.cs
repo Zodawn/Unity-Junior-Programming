@@ -13,11 +13,11 @@ public class Cube : MonoBehaviour
         
         Material material = Renderer.material;
         
-        material.color = new Color(0.5f, 1.0f, 0.3f, 0.4f);
+        material.color = new Color(0.8f, 0.4f, 0.9f, 1.0f);
     }
     
     void Update()
     {
-        transform.Rotate(10.0f * Time.deltaTime, 0.0f, 0.0f);
+        transform.Rotate(500.0f * Time.deltaTime, 500.0f, 500.0f);
     }
 }
