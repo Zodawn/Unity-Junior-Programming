@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
-        playerRb.AddForce(Vector3.up * 500);
+       
 
         jumpAction.Enable();
     }
@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     {
         if (jumpAction.triggered)
         {
-            playerRb.AddForce(Vector3.up * 500);
+            playerRb.AddForce(Vector3.up * 10, ForceMode.Impulse);
         }
     }
 }
