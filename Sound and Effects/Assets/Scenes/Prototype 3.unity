@@ -639,6 +639,8 @@ MonoBehaviour:
       m_Action: Jump
       m_Flags: 0
     m_Flags: 0
+  jumpForce: 50
+  gravityModifier: 2
 --- !u!65 &2076587709
 BoxCollider:
   m_ObjectHideFlags: 0
