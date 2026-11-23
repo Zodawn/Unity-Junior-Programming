@@ -5,36 +5,53 @@ using UnityEngine.InputSystem;
 
 public class PlayerControllerX : MonoBehaviour
 {
-    public float speed;
-    public float rotationSpeed;
-    public float verticalInput;
-    // Start is called before the first frame update
-    void Start()
+    public class PlayerMovement : MonoBehaviour
     {
+        private float horizontal;
+        private float speed = 8f;
+        private float jumpingPower = 16f;
+        private bool isFacingRight = true;
 
-    }
+        [SerializeField] private Rigidbody2D rb;
+        [SerializeField] private Transform groundCheck;
+        [SerializeField] private LayerMask groundLayer;
 
-    // Update is called once per frame
-    void Update()
-    {
-        // get the user's vertical input
-        verticalInput = 0f;
-        if (Keyboard.current != null)
+        void Update()
         {
-            if (Keyboard.current.upArrowKey.isPressed || Keyboard.current.wKey.isPressed)
+            horizontal = Input.GetAxisRaw("Horizontal");
+
+            if (Input.GetButtonDown("Jump") && IsGrounded())
             {
-                verticalInput = 1f;
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
             }
-            else if (Keyboard.current.downArrowKey.isPressed || Keyboard.current.sKey.isPressed)
+
+            if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)
             {
-                verticalInput = -1f;
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
             }
+
+            Flip();
         }
 
-        // move the plane forward at a constant rate
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        private void FixedUpdate()
+        {
+            rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
+        }
 
-        // tilt the plane up/down based on up/down arrow keys
-        transform.Rotate(Vector3.right * rotationSpeed * verticalInput * Time.deltaTime);
+        private bool IsGrounded()
+        {
+            return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        }
+
+        private void Flip()
+        {
+            if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
+            {
+                isFacingRight = !isFacingRight;
+                Vector3 localScale = transform.localScale;
+                localScale.x *= -1f;
+                transform.localScale = localScale;
+            }
+        }
     }
 }
