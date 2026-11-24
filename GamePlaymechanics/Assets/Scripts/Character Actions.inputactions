@@ -1,0 +1,156 @@
+{
+    "version": 1,
+    "name": "Character Actions",
+    "maps": [
+        {
+            "name": "Jump",
+            "id": "83882729-3968-4c90-b592-0d02277209bf",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Value",
+                    "id": "d6cd38e9-ee88-4757-9ba9-fc692213efef",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "828ae68f-ced6-4cfc-a763-ea68cf69b21c",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Attack",
+            "id": "b21d33f6-0cca-4976-b856-fedc8f601a31",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "63869178-7414-48c8-9fdf-0cee9e7d0167",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "de8a3440-4dae-48f5-b697-50a9a395e5bf",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Walk",
+            "id": "ee4c7f79-d795-47f1-857f-66b3d2b4bc5d",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Value",
+                    "id": "ffaa8722-a3e9-4132-b25d-a2ff285175a5",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "84b8d3ab-621f-4f32-b7bf-367fe3dd8261",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d87295e1-0ad7-4237-a4e0-5ddd9e86bb1a",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "64fbb591-eb95-4b4f-8770-54374f9fe37b",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "17ca2ede-f8e9-4b1c-936e-d79a3772af2f",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Dash",
+            "id": "526b24e7-2133-464a-a95c-063ec18b3577",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Value",
+                    "id": "426e4055-658a-442d-998b-ce2f8faa8d34",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "708929a4-28d6-4fb1-96bc-7414b68c4329",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
